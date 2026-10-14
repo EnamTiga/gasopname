@@ -105,7 +105,7 @@ export function SpksPage() {
           <h1 className="text-2xl font-bold tracking-tight text-pretty">SPK</h1>
           <p className="text-sm text-ink-soft">Nilai SPK dihitung otomatis dari pekerjaan terpilih kali harga satuan kontrak</p>
         </div>
-        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ SPK Baru</span></Button>
+        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />SPK Baru</span></Button>
       </header>
 
       <section className="border border-rule bg-sheet">
@@ -116,7 +116,7 @@ export function SpksPage() {
           ) : list.length === 0 ? (
             <div className="space-y-3">
               <p className="text-sm text-ink-soft">Belum ada SPK. Pilih pekerjaan dari proyek, isi harga satuan kontrak, lalu buat SPK.</p>
-              <Button size="sm" onClick={() => setOpen(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ SPK Baru</span></Button>
+              <Button size="sm" onClick={() => setOpen(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />SPK Baru</span></Button>
             </div>
           ) : (
             <div className="table-wrap"><Table>

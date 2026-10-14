@@ -8,6 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { Plus } from "lucide-react";
 import { api, rp } from "@/lib/api";
 import type { Mandor, Project, Realization, Recap, Spk, Week } from "@/lib/types";
 
@@ -100,7 +101,7 @@ export function OpnamePage() {
           <h1 className="text-2xl font-bold tracking-tight text-pretty">Opname Mingguan</h1>
           <p className="text-sm text-ink-soft">Opname = pengajuan. Data selalu bisa diedit ulang.</p>
         </div>
-        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90">+ Opname Baru</Button>
+        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Opname Baru</span></Button>
       </header>
 
       {!spkId || !weekId ? (

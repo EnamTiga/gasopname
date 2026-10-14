@@ -77,7 +77,7 @@ export function KasbonsPage() {
           <h1 className="text-2xl font-bold tracking-tight text-pretty">Kasbon</h1>
           <p className="text-sm text-ink-soft">Kasbon per mandor dengan saldo berjalan</p>
         </div>
-        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ Kasbon Baru</span></Button>
+        <Button onClick={() => setOpen(true)} className="h-11 bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Kasbon Baru</span></Button>
       </header>
 
       <section className="border border-rule bg-sheet">
@@ -102,7 +102,7 @@ export function KasbonsPage() {
           ) : list.length === 0 ? (
             <div className="space-y-3">
               <p className="text-sm text-ink-soft">Belum ada kasbon. Catat kasbon pertama.</p>
-              <Button size="sm" onClick={() => setOpen(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ Kasbon Baru</span></Button>
+              <Button size="sm" onClick={() => setOpen(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Kasbon Baru</span></Button>
             </div>
           ) : (
             <div className="table-wrap"><Table>

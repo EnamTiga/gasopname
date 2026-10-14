@@ -69,7 +69,7 @@ export function MandorsPage() {
           onClick={() => setOpen(true)}
           className="h-11 bg-survey text-white hover:bg-survey/90 focus-visible:ring-2 focus-visible:ring-survey/30"
         >
-          <span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ Mandor Baru</span>
+          <span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Mandor Baru</span>
         </Button>
       </header>
 
@@ -82,7 +82,7 @@ export function MandorsPage() {
             <div className="space-y-3">
               <p className="text-sm text-ink-soft">Belum ada mandor. Daftarkan mandor pertama.</p>
               <Button size="sm" onClick={() => setOpen(true)} className="bg-survey text-white hover:bg-survey/90">
-                <span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ Mandor Baru</span>
+                <span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Mandor Baru</span>
               </Button>
             </div>
           ) : (

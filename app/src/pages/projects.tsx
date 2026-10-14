@@ -79,7 +79,7 @@ export function ProjectsPage() {
           ) : list.length === 0 ? (
             <div className="space-y-3">
               <p className="text-sm text-ink-soft">Belum ada proyek. Buat proyek pertama, lalu tambahkan pekerjaan di dalamnya.</p>
-              <Button size="sm" onClick={() => setOpenProject(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />+ Proyek Baru</span></Button>
+              <Button size="sm" onClick={() => setOpenProject(true)} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Proyek Baru</span></Button>
             </div>
           ) : (
             <div className="table-wrap"><Table>
@@ -218,7 +218,7 @@ function ProjectRow({ project, expanded, onToggle, onAddItem, openItem, onCloseI
             <div className="p-4">
               <div className="mb-3 flex items-center justify-between">
                 <p className="text-sm font-semibold">Pekerjaan paket {project.name}</p>
-                <Button size="sm" onClick={onAddItem} className="bg-survey text-white hover:bg-survey/90">+ Tambahkan Pekerjaan</Button>
+                <Button size="sm" onClick={onAddItem} className="bg-survey text-white hover:bg-survey/90"><span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Tambahkan Pekerjaan</span></Button>
               </div>
               {items.isLoading ? (
                 <p className="text-sm text-ink-soft">Memuat pekerjaan…</p>
