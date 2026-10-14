@@ -214,7 +214,7 @@ export function OpnamePage() {
                 </div>
                 <Button size="sm" disabled={!Number.isInteger(Number(realForm.amount)) || Number(realForm.amount) <= 0 || !realForm.date || addRealization.isPending}
                   onClick={() => addRealization.mutate()} className="h-9 bg-survey text-white hover:bg-survey/90 disabled:opacity-50">
-                  + Catat realisasi
+                  <span className="inline-flex items-center gap-1"><Plus className="h-4 w-4" aria-hidden />Catat realisasi</span>
                 </Button>
               </div>
             </div>

@@ -67,7 +67,7 @@ export function ProjectsPage() {
           <p className="text-sm text-ink-soft">Identitas proyek dan daftar pekerjaan per paket (RAB dan RAP)</p>
         </div>
         <Button onClick={() => setOpenProject(true)} className="h-11 bg-survey text-white hover:bg-survey/90">
-          + Proyek Baru
+          <span className="inline-flex items-center gap-1.5"><Plus className="h-4 w-4" aria-hidden />Proyek Baru</span>
         </Button>
       </header>
 
