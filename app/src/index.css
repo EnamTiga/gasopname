@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-paper: #F4F7F8;
+  --color-sheet: #FFFFFF;
+  --color-ink: #16323D;
+  --color-ink-soft: #5E7783;
+  --color-rule: #DCE5E8;
+  --color-survey: #077B9E;
+  --color-marker: #B45309;
+  --color-lolos: #16A34A;
+}
+
+html { font-feature-settings: "tnum"; }
+body { background: #F4F7F8; color: #16323D; }
+
+/* R9 mobile: tabel operasional tetap tabel, digulir di layar sempit dengan tepi halus */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.table-wrap table {
+  min-width: 640px;
+}
+@media (max-width: 767px) {
+  .table-wrap { overscroll-behavior-x: contain; }
+}

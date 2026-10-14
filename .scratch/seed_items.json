@@ -1,0 +1,290 @@
+[
+ {
+  "uraian": "Mobilisasi Alat",
+  "satuan": "Ls",
+  "harga": 10000000,
+  "vol_kontrak": 1.0,
+  "vols": [
+   1.0,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Mess Pekerja dan Fasilitas",
+  "satuan": "Ls",
+  "harga": 3000000,
+  "vol_kontrak": 1.0,
+  "vols": [
+   1.0,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Bongkar Paving Eksisting",
+  "satuan": "m2",
+  "harga": 1000,
+  "vol_kontrak": 7808.0,
+  "vols": [
+   7703.71,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Cor Beton Readymix",
+  "satuan": "m3",
+  "harga": 65000,
+  "vol_kontrak": 4281.42,
+  "vols": [
+   596.72,
+   895.88,
+   555.6,
+   789.81,
+   473.8,
+   691.73,
+   294.65,
+   47.65
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Batu Kali",
+  "satuan": "m3",
+  "harga": 65000,
+  "vol_kontrak": 8.07,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   4.32,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Bekisting + Bongkar",
+  "satuan": "m2",
+  "harga": 45000,
+  "vol_kontrak": 5748.79,
+  "vols": [
+   719.46,
+   1338.94,
+   646.23,
+   374.94,
+   206.0,
+   1065.65,
+   70.95,
+   510.88
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Gorong-gorong",
+  "satuan": "Bh",
+  "harga": 100000,
+  "vol_kontrak": 5.0,
+  "vols": [
+   null,
+   null,
+   6.0,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Guardrail",
+  "satuan": "m1",
+  "harga": 50000,
+  "vol_kontrak": 200.0,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   200.0
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Stopcor + Bongkar",
+  "satuan": "m2",
+  "harga": 30000,
+  "vol_kontrak": 1086.1,
+  "vols": [
+   107.7,
+   155.0,
+   95.52,
+   162.3,
+   103.0,
+   124.48,
+   167.39,
+   49.67
+  ]
+ },
+ {
+  "uraian": "Upah Pasang Wiremesh",
+  "satuan": "kg",
+  "harga": 1100,
+  "vol_kontrak": 135499.1,
+  "vols": [
+   17711.17,
+   22345.87,
+   15810.94,
+   26864.7,
+   17049.07,
+   23463.67,
+   12522.26,
+   1843.48
+  ]
+ },
+ {
+  "uraian": "Upah Pembesian",
+  "satuan": "kg",
+  "harga": 1400,
+  "vol_kontrak": 68438.49,
+  "vols": [
+   11500.01,
+   22748.47,
+   12719.24,
+   10705.79,
+   4870.61,
+   3000.0,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Pembongkaran Batu + Alat",
+  "satuan": "m3",
+  "harga": 60000,
+  "vol_kontrak": 13.2,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Upah Pengecatan",
+  "satuan": "m2",
+  "harga": 10000,
+  "vol_kontrak": 14.84,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   14.84
+  ]
+ },
+ {
+  "uraian": "Febrikasi Panel Bekisting",
+  "satuan": "m2",
+  "harga": 40000,
+  "vol_kontrak": 150.0,
+  "vols": [
+   77.55,
+   71.33,
+   55.85,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Jasa Borepile Komplit alat (pembesian + cor)",
+  "satuan": "m1",
+  "harga": 40000,
+  "vol_kontrak": 3060.0,
+  "vols": [
+   438.0,
+   618.0,
+   371.81,
+   null,
+   264.0,
+   754.19,
+   300.0,
+   527.89
+  ]
+ },
+ {
+  "uraian": "Jasa Pemotongan Pohon + Pengakutan",
+  "satuan": "buah",
+  "harga": 50000,
+  "vol_kontrak": 47.0,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Jasa Penanaman Pohon + Pengangkutan",
+  "satuan": "buah",
+  "harga": 150000,
+  "vol_kontrak": 47.0,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "uraian": "Jasa Pembongkaran + Pasang PJU",
+  "satuan": "buah",
+  "harga": 30000,
+  "vol_kontrak": 20.0,
+  "vols": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ }
+]

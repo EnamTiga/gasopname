@@ -1,0 +1,11 @@
+// wrangler config — gasopname (Workers + D1, free tier)
+{
+  "name": "gasopname",
+  "main": "server/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "dist" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "gasopname", "database_id": "local-dev" }
+  ],
+  "vars": { }
+}
