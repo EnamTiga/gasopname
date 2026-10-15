@@ -2354,6 +2354,10 @@ function createApp(middleware = []) {
     app2.use("*", mw);
   }
   app2.get("/api/health", (c) => c.json({ ok: true }));
+  app2.use("*", async (c, next) => {
+    await next();
+    c.header("X-Robots-Tag", "noindex, nofollow, noarchive");
+  });
   registerProjectRoutes(app2);
   registerMandorRoutes(app2);
   registerSpkRoutes(app2);

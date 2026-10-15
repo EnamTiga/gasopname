@@ -30,3 +30,11 @@ body { background: #F4F7F8; color: #16323D; }
 @media (max-width: 767px) {
   .table-wrap { overscroll-behavior-x: contain; }
 }
+
+/* Landing R14: scroll reveal + hormati reduced motion */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.reveal.revealed { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

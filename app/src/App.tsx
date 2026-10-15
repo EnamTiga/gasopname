@@ -7,6 +7,7 @@ import { MandorsPage } from "@/pages/mandors";
 import { SpksPage } from "@/pages/spks";
 import { OpnamePage } from "@/pages/opname";
 import { KasbonsPage } from "@/pages/kasbons";
+import { Landing } from "@/pages/landing";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { cn } from "@/lib/utils";
 import { LayoutDashboard, FolderKanban, HardHat, FileSignature, Ruler, Wallet } from "lucide-react";
@@ -28,6 +29,15 @@ const queryClient = new QueryClient({
 
 export default function App() {
   const [nav, setNav] = useState<NavKey>("dashboard");
+  const [entered, setEntered] = useState(() => localStorage.getItem("gasopname-entered") === "1");
+
+  if (!entered) {
+    return (
+      <QueryClientProvider client={queryClient}>
+        <Landing onStart={() => { localStorage.setItem("gasopname-entered", "1"); setEntered(true); }} />
+      </QueryClientProvider>
+    );
+  }
 
   return (
     <QueryClientProvider client={queryClient}>

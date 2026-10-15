@@ -101,3 +101,9 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - Nama project: opnamyuk -> gasopname (title, wrangler, kode, docs, sessionStorage key, ADR).
 - Dead code dihapus: shared/recap.ts, shared/types.calc.ts, shared/calc.ts, tests/calc.test.ts (alur lama), tests/e2e_smoke*.py (alur lama).
 - Repo GitHub dibuat & push (akun EnamTiga).
+
+
+## R14 — Landing page + production polish + noindex
+- index.html: title, description, favicon.svg di-link, lang="id", meta robots noindex
+- robots.txt Disallow all + header X-Robots-Tag: noindex di server (tidak bisa dicari search engine)
+- Landing page interaktif (src/pages/landing.tsx): hero stagger entrance, demo slider volume -> nilai opname/retensi live, kartu fitur 3D tilt, scroll reveal, press feedback, prefers-reduced-motion dihormati; masuk aplikasi sekali per perangkat (localStorage)
