@@ -126,3 +126,6 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - Path tidak dikenal -> redirect /dashboard; SPA fallback via env.ASSETS (worker forward non-/api ke assets)
 - Rebrand display name: "GASopname" (title, sidebar, landing, footer); identifier internal tetap gasopname
 - E2E: tiap path direct-open + refresh + back OK; path aneh redirect; API + X-Robots-Tag utuh
+
+## R15b — Copy landing: internal perusahaan
+- Badge "Untuk kontraktor & mandor" -> "Sistem internal perusahaan"; footer disesuaikan (landing tidak lagi memasarkan app sebagai tool mandor).
