@@ -129,3 +129,4 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 
 ## R15b — Copy landing: internal perusahaan
 - Badge "Untuk kontraktor & mandor" -> "Sistem internal perusahaan"; footer disesuaikan (landing tidak lagi memasarkan app sebagai tool mandor).
+- Koreksi: badge cukup "Sistem opname konstruksi", tanpa kata internal.
