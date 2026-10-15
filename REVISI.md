@@ -107,3 +107,7 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - index.html: title, description, favicon.svg di-link, lang="id", meta robots noindex
 - robots.txt Disallow all + header X-Robots-Tag: noindex di server (tidak bisa dicari search engine)
 - Landing page interaktif (src/pages/landing.tsx): hero stagger entrance, demo slider volume -> nilai opname/retensi live, kartu fitur 3D tilt, scroll reveal, press feedback, prefers-reduced-motion dihormati; masuk aplikasi sekali per perangkat (localStorage)
+
+
+## R14b — Perbaikan X-Robots-Tag
+- Header noindex sebelumnya tidak menempel (c.res.headers.set di middleware Hono gagal untuk c.json) -> dipindah ke wrapper fetch di server/index.ts; terverifikasi live di semua response.

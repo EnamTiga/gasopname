@@ -16,10 +16,6 @@ export function createApp(middleware: MiddlewareHandler[] = []) {
     app.use("*", mw);
   }
   app.get("/api/health", (c) => c.json({ ok: true }));
-  app.use("*", async (c, next) => {
-    await next();
-    c.header("X-Robots-Tag", "noindex, nofollow, noarchive");
-  });
   registerProjectRoutes(app as unknown as Parameters<typeof registerProjectRoutes>[0]);
   registerMandorRoutes(app as unknown as Parameters<typeof registerMandorRoutes>[0]);
   registerSpkRoutes(app as unknown as Parameters<typeof registerSpkRoutes>[0]);
