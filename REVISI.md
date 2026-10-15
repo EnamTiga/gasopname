@@ -115,3 +115,5 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - Fix: sisa "opnamyuk" di sidebar App.tsx -> "gasopname"; redeploy bersih (dist dihapus).
 
 - Catatan: HTML statis dilayani CF asset layer (cf-cache HIT, header worker tidak menempel) — tapi meta robots noindex ada di dalam HTML; header X-Robots-Tag aktif untuk semua path dinamis.
+
+- Polish visual landing berdasarkan review screenshot: headline wrapping, alignment kolom, padding kotak angka.

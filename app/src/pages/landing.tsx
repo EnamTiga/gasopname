@@ -64,15 +64,15 @@ function DemoOpname() {
         onChange={(e) => setVol(Number(e.target.value))}
         className="mt-2 w-full accent-[#077B9E]" />
       <div className="mt-4 grid grid-cols-3 gap-3 text-center">
-        <div className="border border-rule bg-paper p-3">
+        <div className="border border-rule bg-paper px-3.5 py-3">
           <p className="text-[11px] text-ink-soft">Nilai opname</p>
           <p className="font-mono text-sm font-bold tabular-nums sm:text-base">{rupiah(nilai)}</p>
         </div>
-        <div className="border border-rule bg-paper p-3">
+        <div className="border border-rule bg-paper px-3.5 py-3">
           <p className="text-[11px] text-ink-soft">Retensi {retensi}%</p>
           <p className="font-mono text-sm font-bold tabular-nums sm:text-base">{rupiah(potongan)}</p>
         </div>
-        <div className="border border-survey/40 bg-survey/5 p-3">
+        <div className="border border-survey/40 bg-survey/5 px-3.5 py-3">
           <p className="text-[11px] text-ink-soft">Diajukan</p>
           <p className="font-mono text-sm font-bold tabular-nums text-survey sm:text-base">{rupiah(nilai - potongan)}</p>
         </div>
@@ -128,7 +128,7 @@ export function Landing({ onStart }: { onStart: () => void }) {
             </div>
             <p className={`mt-3 text-xs text-ink-soft ${anim(4)}`}>Gratis dipakai. Tidak perlu daftar akun.</p>
           </div>
-          <div className={anim(3)}>
+          <div className={`${anim(3)} lg:self-center`}>
             <DemoOpname />
           </div>
         </section>
