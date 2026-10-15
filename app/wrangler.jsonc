@@ -3,7 +3,7 @@
   "name": "gasopname",
   "main": "server/index.ts",
   "compatibility_date": "2026-10-01",
-  "assets": { "directory": "dist" },
+  "assets": { "directory": "dist", "binding": "ASSETS", "not_found_handling": "single-page-application" },
   "d1_databases": [
     { "binding": "DB", "database_name": "gasopname", "database_id": "3b4bc363-1149-407d-b906-e8453c94e218" }
   ],

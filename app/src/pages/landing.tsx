@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FolderKanban, FileSignature, Ruler, Wallet, BarChart3, ShieldCheck, HardHat, MoveRight } from "lucide-react";
 
@@ -82,8 +83,9 @@ function DemoOpname() {
   );
 }
 
-export function Landing({ onStart }: { onStart: () => void }) {
+export function Landing() {
   useReveal();
+  const navigate = useNavigate();
   const [heroOn, setHeroOn] = useState(false);
   useEffect(() => { const t = setTimeout(() => setHeroOn(true), 60); return () => clearTimeout(t); }, []);
   const anim = (i: number) =>
@@ -101,9 +103,9 @@ export function Landing({ onStart }: { onStart: () => void }) {
 
       <header className="relative mx-auto flex max-w-5xl items-center justify-between px-5 py-5">
         <p className="text-xl font-extrabold tracking-tight">
-          gasop<span className="text-survey">name</span>
+          GAS<span className="text-survey">opname</span>
         </p>
-        <Button onClick={onStart} className="h-11 bg-survey text-white transition-transform active:scale-95 hover:bg-survey/90">
+        <Button onClick={() => navigate("/dashboard")} className="h-11 bg-survey text-white transition-transform active:scale-95 hover:bg-survey/90">
           Buka aplikasi
         </Button>
       </header>
@@ -122,7 +124,7 @@ export function Landing({ onStart }: { onStart: () => void }) {
               pantau realisasi pembayaran dan kasbon. Semua dalam satu aplikasi ringan.
             </p>
             <div className={`mt-8 flex flex-wrap items-center gap-3 ${anim(3)}`}>
-              <Button onClick={onStart} className="h-12 bg-survey px-6 text-white transition-transform active:scale-95 hover:bg-survey/90">
+              <Button onClick={() => navigate("/dashboard")} className="h-12 bg-survey px-6 text-white transition-transform active:scale-95 hover:bg-survey/90">
                 Mulai sekarang <MoveRight className="h-4 w-4" aria-hidden />
               </Button>
             </div>
@@ -162,7 +164,7 @@ export function Landing({ onStart }: { onStart: () => void }) {
       </main>
 
       <footer className="relative border-t border-rule py-6 text-center text-xs text-ink-soft">
-        gasopname — aplikasi opname konstruksi
+        GASopname — aplikasi opname konstruksi
       </footer>
     </div>
   );

@@ -117,3 +117,12 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - Catatan: HTML statis dilayani CF asset layer (cf-cache HIT, header worker tidak menempel) — tapi meta robots noindex ada di dalam HTML; header X-Robots-Tag aktif untuk semua path dinamis.
 
 - Polish visual landing berdasarkan review screenshot: headline wrapping, alignment kolom, padding kotak angka.
+
+
+## R15 — Routing per halaman + rebrand GASopname
+- react-router-dom: /dashboard /proyek /mandor /spk /opname /kasbon (client-side routing, tetap SPA)
+- Landing di /; tombol Buka aplikasi -> navigate /dashboard; flag localStorage gasopname-entered dihapus
+- Sidebar & bottom nav pakai NavLink asli (back-button ponsel jalan, aktif ter-highlight); dashboard onNavigate -> navigate()
+- Path tidak dikenal -> redirect /dashboard; SPA fallback via env.ASSETS (worker forward non-/api ke assets)
+- Rebrand display name: "GASopname" (title, sidebar, landing, footer); identifier internal tetap gasopname
+- E2E: tiap path direct-open + refresh + back OK; path aneh redirect; API + X-Robots-Tag utuh
