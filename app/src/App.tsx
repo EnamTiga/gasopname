@@ -45,7 +45,7 @@ export default function App() {
           <aside className="hidden w-60 flex-col border-r border-rule bg-sheet md:flex">
             <div className="border-b border-rule px-6 py-5">
               <p className="text-xl font-extrabold tracking-tight text-ink">
-                opnam<span className="text-survey">yuk</span>
+                gasop<span className="text-survey">name</span>
               </p>
               <p className="mt-0.5 text-xs text-ink-soft">Sistem opname konstruksi</p>
             </div>

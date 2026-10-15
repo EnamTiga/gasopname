@@ -111,3 +111,5 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 
 ## R14b — Perbaikan X-Robots-Tag
 - Header noindex sebelumnya tidak menempel (c.res.headers.set di middleware Hono gagal untuk c.json) -> dipindah ke wrapper fetch di server/index.ts; terverifikasi live di semua response.
+
+- Fix: sisa "opnamyuk" di sidebar App.tsx -> "gasopname"; redeploy bersih (dist dihapus).
