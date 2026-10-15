@@ -114,7 +114,7 @@ export function Landing() {
         <section className="grid grid-cols-1 items-center gap-10 py-10 sm:py-16 lg:grid-cols-2 lg:gap-14">
           <div>
             <p className={`mb-4 inline-flex items-center gap-1.5 rounded-full border border-rule bg-sheet px-4 py-1.5 text-xs font-semibold text-survey ${anim(0)}`}>
-              <HardHat className="h-3.5 w-3.5" aria-hidden /> Sistem internal perusahaan
+              <HardHat className="h-3.5 w-3.5" aria-hidden /> Sistem opname konstruksi
             </p>
             <h1 className={`text-3xl font-bold leading-tight tracking-tight text-pretty sm:text-4xl lg:text-[2.6rem] ${anim(1)}`}>
               Opname mingguan proyek konstruksi, akhirnya tidak pakai spreadsheet lagi
@@ -164,7 +164,7 @@ export function Landing() {
       </main>
 
       <footer className="relative border-t border-rule py-6 text-center text-xs text-ink-soft">
-        GASopname — sistem opname internal perusahaan
+        GASopname — sistem opname konstruksi
       </footer>
     </div>
   );
