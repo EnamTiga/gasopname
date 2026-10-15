@@ -113,3 +113,5 @@ Rencana (mengikuti skill antislop-layoutmobile, bukan desktop yang dikecilkan):
 - Header noindex sebelumnya tidak menempel (c.res.headers.set di middleware Hono gagal untuk c.json) -> dipindah ke wrapper fetch di server/index.ts; terverifikasi live di semua response.
 
 - Fix: sisa "opnamyuk" di sidebar App.tsx -> "gasopname"; redeploy bersih (dist dihapus).
+
+- Catatan: HTML statis dilayani CF asset layer (cf-cache HIT, header worker tidak menempel) — tapi meta robots noindex ada di dalam HTML; header X-Robots-Tag aktif untuk semua path dinamis.
