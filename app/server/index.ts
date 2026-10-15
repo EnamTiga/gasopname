@@ -3,7 +3,7 @@ import { createApp } from "./app";
 const app = createApp();
 
 export default {
-  async fetch(req, env, ctx) {
+  async fetch(req: Request, env: { ASSETS: { fetch: (r: Request) => Promise<Response> } }, ctx: ExecutionContext) {
     const url = new URL(req.url);
     if (url.pathname.startsWith("/api/")) {
       const res: Response = await app.fetch(req, env, ctx);
